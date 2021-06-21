@@ -29,7 +29,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @ApiOperation(value = "用户名是否存在", notes = "用户名是否存在", httpMethod = "GET")
+    @ApiOperation(value = "用户名  是否存在", notes = "用户名是否存在", httpMethod = "GET")
     @GetMapping("/usernameIsExist")
     public Result usernameIsExist(@RequestParam String username) {
 
