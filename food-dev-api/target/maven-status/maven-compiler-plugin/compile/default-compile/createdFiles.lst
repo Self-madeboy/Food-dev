@@ -1,0 +1,5 @@
+com\life\controller\UserController.class
+com\life\controller\HelloController.class
+com\life\config\Swagger2.class
+com\life\Application.class
+com\life\config\CorsConfig.class

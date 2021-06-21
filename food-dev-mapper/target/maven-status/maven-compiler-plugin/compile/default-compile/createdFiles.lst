@@ -1,0 +1,13 @@
+com\life\mapper\ItemsMapper.class
+com\life\mapper\ItemsParamMapper.class
+com\life\mapper\OrderItemsMapper.class
+com\life\mapper\OrdersMapper.class
+com\life\mapper\ItemsCommentsMapper.class
+com\life\mapper\UsersMapper.class
+com\life\mapper\ItemsSpecMapper.class
+com\life\mapper\UserAddressMapper.class
+com\life\mapper\CategoryMapper.class
+com\life\mapper\ItemsImgMapper.class
+com\life\my\mapper\MyMapper.class
+com\life\mapper\CarouselMapper.class
+com\life\mapper\OrderStatusMapper.class

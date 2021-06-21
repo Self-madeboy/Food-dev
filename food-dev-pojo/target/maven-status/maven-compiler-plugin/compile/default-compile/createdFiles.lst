@@ -1,0 +1,13 @@
+com\life\pojo\ItemsImg.class
+com\life\pojo\ItemsSpec.class
+com\life\pojo\bo\UserBO.class
+com\life\pojo\ItemsComments.class
+com\life\pojo\ItemsParam.class
+com\life\pojo\Items.class
+com\life\pojo\Carousel.class
+com\life\pojo\OrderItems.class
+com\life\pojo\OrderStatus.class
+com\life\pojo\Users.class
+com\life\pojo\Category.class
+com\life\pojo\UserAddress.class
+com\life\pojo\Orders.class
