@@ -13,24 +13,35 @@ import com.life.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.inject.Inject;
+
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import static com.life.controller.UserController.REQUEST_MAPPING;
+
 /**
  * @author jc
  */
-@Api(value = "注册登录", tags = {"用于注册登录的相关接口"})
+@Api(value = REQUEST_MAPPING, tags = {"用于注册登录的相关接口"})
 @RestController
-@RequestMapping("passport")
+@RequestMapping(value =REQUEST_MAPPING)
 public class UserController {
-    @Autowired
-    private UserService userService;
+
+    public static final String REQUEST_MAPPING ="/passport" ;
+    private  final UserService userService;
+
+    @Inject
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
 
     @ApiOperation(value = "用户名  是否存在", notes = "用户名是否存在", httpMethod = "GET")
-    @GetMapping("/usernameIsExist")
+    @GetMapping(value = "/usernameIsExist")
     public Result usernameIsExist(@RequestParam String username) {
 
         // 1. 判断用户名不能为空
